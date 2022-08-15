@@ -17,5 +17,4 @@ jobs:
     - name: Build the Docker image
       run: 
             cd Live-Transfer-Market-API
-            cd Live-Transfer-Market-API
             docker build . --file Dockerfile --tag ltmapi:$(date +%s)

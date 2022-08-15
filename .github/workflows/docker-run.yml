@@ -18,4 +18,4 @@ jobs:
       run: ls LiveTransferMarket.API/LiveTransferMarket.API
     - name: Build the Docker image
       run: 
-            docker build . --file Dockerfile --tag ltmapi:$(date +%s)
+            docker build . --file ./LiveTransferMarket.API/LiveTransferMarket.API/Dockerfile --tag ltmapi:$(date +%s)

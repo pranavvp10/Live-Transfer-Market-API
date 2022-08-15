@@ -8,6 +8,7 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/sdk:6.0-alpine-amd64 AS build
 WORKDIR /src
 COPY ["LiveTransferMarket.API/LiveTransferMarket.API.csproj", "LiveTransferMarket.API/"]
+RUN ls
 RUN dotnet restore "LiveTransferMarket.API/LiveTransferMarket.API.csproj"
 COPY . .
 WORKDIR "/src/LiveTransferMarket.API"

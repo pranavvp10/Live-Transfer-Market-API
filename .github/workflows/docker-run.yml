@@ -15,4 +15,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file ./Live-Transfer-Market-API/Live-Transfer-Market-API/Dockerfile --tag ltmapi:$(date +%s)
+      run: 
+            cd Live-Transfer-Market-API
+            cd Live-Transfer-Market-API
+            docker build . --file Dockerfile --tag ltmapi:$(date +%s)
